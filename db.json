@@ -1,0 +1,61 @@
+
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Admin",
+            "email": "admin@soderia.com",
+            "password": "admin123",
+            "role": "admin"
+        },
+        {
+            "id": 2,
+            "nombre": "Cliente Juan",
+            "email": "juan@gmail.com",
+            "password": "cliente123",
+            "role": "cliente"
+        }
+        ],
+        "productos": [
+        {
+            "id": 1,
+            "nombre": "Soda 1L",
+            "precio": 150,
+            "stock": 50
+        },
+        {
+            "id": 2,
+            "nombre": "Soda 2L",
+            "precio": 250,
+            "stock": 30
+        }
+        ],
+        "clientes": [
+        {
+            "id": 1,
+            "nombre": "Juan Pérez",
+            "email": "juan@gmail.com",
+            "telefono": "3811234567"
+        },
+        {
+            "id": 2,
+            "nombre": "Ana García",
+            "email": "ana@gmail.com",
+            "telefono": "3817654321"
+        }
+        ],
+        "ventas": [
+        {
+            "id": 1,
+            "clienteId": 1,
+            "productos": [
+            {
+                "productoId": 1,
+                "cantidad": 2
+            }
+            ],
+            "total": 300,
+            "fecha": "2025-05-26"
+        }
+        ]
+}
