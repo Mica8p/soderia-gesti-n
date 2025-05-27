@@ -10,14 +10,19 @@ function Header() {
         <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item"><Link className="nav-link" to="/productos">Productos</Link></li>
+                {user?.role === 'cliente' && (
+                <li className="nav-item">
+                <Link className="nav-link" to="/carrito">Carrito</Link>
+                </li>)}
+
                 {user?.role === 'admin' && (
-            <>
-                <li className="nav-item"><Link className="nav-link" to="/dashboard">Dashboard</Link></li>
+                <>
+                
                 <li className="nav-item"><Link className="nav-link" to="/clientes">Clientes</Link></li>
-            </>
-            )}
-        </ul>
-        <ul className="navbar-nav ml-auto">
+                </>
+                )}
+            </ul>
+            <ul className="navbar-nav ml-auto">
             {!user ? (
             <li className="nav-item"><Link className="nav-link" to="/login">Login</Link></li>
             ) : (

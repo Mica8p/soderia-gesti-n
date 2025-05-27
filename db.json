@@ -1,63 +1,69 @@
-
 {
-    "usuarios": [
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Admin",
+      "email": "admin@soderia.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "nombre": "Cliente Juan",
+      "email": "juan@gmail.com",
+      "password": "cliente123",
+      "role": "cliente"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Soda 1L",
+      "precio": 150,
+      "stock": 50,
+      "imagen": "/public/images/soda4.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Soda 2L",
+      "precio": 250,
+      "stock": 30,
+      "imagen": "/public/images/soda3.jpg"
+    },
+    {
+      "id": "4f67",
+      "nombre": "Soda 500cc",
+      "precio": 50,
+      "stock": 10,
+      "imagen": "https://i.pinimg.com/736x/83/95/f3/8395f30fd76b95a0f1db54fa943358de.jpg"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "email": "juan@gmail.com",
+      "telefono": "3811234567"
+    },
+    {
+      "id": 2,
+      "nombre": "Ana García",
+      "email": "ana@gmail.com",
+      "telefono": "3817654321"
+    }
+  ],
+  "ventas": [
+    {
+      "id": 1,
+      "clienteId": 1,
+      "productos": [
         {
-            "id": 1,
-            "nombre": "Admin",
-            "email": "admin@soderia.com",
-            "password": "admin123",
-            "role": "admin"
-        },
-        {
-            "id": 2,
-            "nombre": "Cliente Juan",
-            "email": "juan@gmail.com",
-            "password": "cliente123",
-            "role": "cliente"
+          "productoId": 1,
+          "cantidad": 2
         }
-        ],
-        "productos": [
-        {
-            "id": 1,
-            "nombre": "Soda 1L",
-            "precio": 150,
-            "stock": 50,
-            "imagen": "/public/images/soda4.jpg"
-        },
-        {
-            "id": 2,
-            "nombre": "Soda 2L",
-            "precio": 250,
-            "stock": 30,
-            "imagen": "/public/images/soda3.jpg"
-        }
-        ],
-        "clientes": [
-        {
-            "id": 1,
-            "nombre": "Juan Pérez",
-            "email": "juan@gmail.com",
-            "telefono": "3811234567"
-        },
-        {
-            "id": 2,
-            "nombre": "Ana García",
-            "email": "ana@gmail.com",
-            "telefono": "3817654321"
-        }
-        ],
-        "ventas": [
-        {
-            "id": 1,
-            "clienteId": 1,
-            "productos": [
-            {
-                "productoId": 1,
-                "cantidad": 2
-            }
-            ],
-            "total": 300,
-            "fecha": "2025-05-26"
-        }
-        ]
+      ],
+      "total": 300,
+      "fecha": "2025-05-26"
+    }
+  ]
 }
