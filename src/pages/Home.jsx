@@ -10,6 +10,7 @@ function Home() {
             padding: '5rem'
         }}
         >
+        <img src="/public/images/soda1.png" alt="Logo Sodería" style={{ width: '150px', marginBottom: '1rem' }}/>
         <h1 className="display-3 fw-bold">¡Bienvenido a la Sodería!</h1>
         <p className="lead">Agua con gas natural, frescura garantizada</p>
         </div>

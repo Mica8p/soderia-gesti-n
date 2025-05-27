@@ -21,13 +21,15 @@
             "id": 1,
             "nombre": "Soda 1L",
             "precio": 150,
-            "stock": 50
+            "stock": 50,
+            "imagen": "/public/images/soda4.jpg"
         },
         {
             "id": 2,
             "nombre": "Soda 2L",
             "precio": 250,
-            "stock": 30
+            "stock": 30,
+            "imagen": "/public/images/soda3.jpg"
         }
         ],
         "clientes": [
